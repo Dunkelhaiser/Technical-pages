@@ -1,0 +1,27 @@
+button {
+    @include hover;
+
+    cursor: pointer;
+
+    padding: 1.4em 1.07em;
+
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $light-foreground;
+
+    background-color: $light-text-bg;
+    border-color: $light-text;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.35em;
+    outline: $light-text;
+    outline-color: $light-text-bg;
+
+    &:hover {
+        background-color: $light-text;
+    }
+
+    &:active {
+        background-color: $light-grey-dark;
+    }
+}
