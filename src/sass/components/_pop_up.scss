@@ -2,16 +2,19 @@
     @include flex(column, center, center, center, 1rem, nowrap);
 
     position: absolute;
-    top: 5%;
+    top: -25%;
 
     max-width: calc(100% - 10rem);
     margin: 0 5rem;
     padding: 2rem;
 
+    visibility: hidden;
     background-color: $light-foreground;
     border-top: 0.2rem solid $light-error;
     border-radius: 2em;
     box-shadow: $light-shadow 0 8px 24px;
+
+    transition: all 0.3s ease-in;
 
     span {
         font-size: 1.2rem;
@@ -20,5 +23,18 @@
     button {
         width: 100%;
         padding: 0.75em 1em;
+    }
+}
+
+.pop-up-shown {
+    top: 5%;
+    visibility: visible;
+}
+
+.pop-up-success {
+    border-top: 0.2rem solid $light-success;
+
+    button {
+        display: none;
     }
 }
