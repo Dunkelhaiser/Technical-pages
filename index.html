@@ -9,6 +9,7 @@
         <title>Technical Pages</title>
         <script type="module" src="/src/ts/modalWindow.ts" defer></script>
         <script type="module" src="/src/ts/noConnection.ts" defer></script>
+        <script type="module" src="/src/ts/service-worker.js" defer></script>
     </head>
     <body>
         <noscript>
@@ -46,5 +47,14 @@
                 </div>
             </div>
         </div>
+        <script>
+            if (navigator.serviceWorker) {
+                window.addEventListener("load", () => {
+                    navigator.serviceWorker
+                        .register("./src/ts/service-worker.js")
+                        .catch((swErr) => console.log(`Service Worker Error: ${swErr}}`));
+                });
+            }
+        </script>
     </body>
 </html>
