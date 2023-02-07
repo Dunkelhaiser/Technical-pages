@@ -1,0 +1,31 @@
+.title {
+    margin: 0 5rem;
+    font-size: 5.2rem;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 4.2rem;
+    text-align: center;
+}
+
+.message {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+a {
+    @include hover;
+
+    color: $light-link;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $light-link-light;
+    }
+
+    &:active {
+        color: $light-link-dark;
+    }
+}
