@@ -8,6 +8,7 @@
         <meta name="description" content="Compliance of technical pages." />
         <title>Technical Pages</title>
         <script type="module" src="/src/ts/modalWindow.ts" defer></script>
+        <script type="module" src="/src/ts/noConnection.ts" defer></script>
     </head>
     <body>
         <noscript>
@@ -27,6 +28,12 @@
             <h2 class="title">Technical pages</h2>
             <span class="message">Compliance of technical pages, that may be used in the web.</span>
             <span class="message link open-modal">More info</span>
+            <div class="pop-up">
+                <h2>Lost Connection</h2>
+                <span>Your internet connection is unavailable.</span>
+                <span>Reconnecting in <strong>10</strong> seconds.</span>
+                <button type="button">Reconnect</button>
+            </div>
             <div class="overlay hidden"></div>
             <div class="modal-window hidden">
                 <h2>Info</h2>
