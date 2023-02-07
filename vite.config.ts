@@ -6,8 +6,8 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, "index.html"),
-                generator: resolve(__dirname, "generator.html"),
-                reader: resolve(__dirname, "reader.html"),
+                notFound: resolve(__dirname, "404.html"),
+                offline: resolve(__dirname, "offline.html"),
             },
         },
     },
