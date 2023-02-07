@@ -1,0 +1,70 @@
+.overlay {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: rgb(0 0 0 / 70%);
+
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-window {
+    @include respond-tablet-landscape {
+        margin: 50% auto;
+    }
+    @include respond-phone {
+        width: 70%;
+        margin: 75% auto;
+    }
+
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    width: 50%;
+    margin: 10rem auto;
+    padding: 5rem;
+
+    background: white;
+    border-radius: 5px;
+
+    transition: all 0.3s ease-in-out;
+
+    h2 {
+        margin-bottom: 2rem;
+        font-size: 2.4rem;
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    .close-modal {
+        cursor: pointer;
+
+        position: absolute;
+        top: 3.5rem;
+        right: 5rem;
+
+        font-size: 30px;
+        font-weight: bold;
+        color: $light-text;
+        text-decoration: none;
+
+        transition: all 200ms;
+
+        &:hover {
+            color: $light-grey-dark;
+        }
+    }
+
+    .content {
+        overflow: auto;
+    }
+}

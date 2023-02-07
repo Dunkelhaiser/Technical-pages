@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Compliance of technical pages." />
         <title>Technical Pages</title>
+        <script type="module" src="/src/ts/modalWindow.ts" defer></script>
     </head>
     <body>
         <noscript>
@@ -22,5 +23,21 @@
                 >
             </div>
         </noscript>
+        <div class="center">
+            <h2 class="title">Technical pages</h2>
+            <span class="message">Compliance of technical pages, that may be used in the web.</span>
+            <span class="message link open-modal">More info</span>
+            <div class="overlay hidden"></div>
+            <div class="modal-window hidden">
+                <h2>Info</h2>
+                <a class="close-modal">&times;</a>
+                <div class="content">
+                    <p>1) To access 404 page, enter random url.</p>
+                    <p>2) To access noscript page, disable JavaScript in browser for this page.</p>
+                    <p>3) To access no connection page, disable your network connection and reload the page.</p>
+                    <p>4) To get no connection pop up, disable your network connection and do not reload the page.</p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

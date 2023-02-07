@@ -14,9 +14,11 @@
     text-align: center;
 }
 
-a {
+a,
+.link {
     @include hover;
 
+    cursor: pointer;
     color: $light-link;
     text-decoration: none;
 
